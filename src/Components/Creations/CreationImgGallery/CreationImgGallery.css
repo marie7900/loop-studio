@@ -1,0 +1,136 @@
+.gallery-img-0,
+.gallery-img-1,
+.gallery-img-2,
+.gallery-img-3,
+.gallery-img-4,
+.gallery-img-5,
+.gallery-img-6,
+.gallery-img-7 {
+	cursor: pointer;
+	position: relative;
+	height: 70vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 2rem;
+}
+.gallery-img-0 {
+	background-image: url(../../../assets/desktop/image-night-arcade.jpg);
+}
+
+.gallery-img-1 {
+	background-image: url(../../../assets/desktop/image-curiosity.jpg);
+}
+
+.gallery-img-2 {
+	background-image: url(../../../assets/desktop/image-deep-earth.jpg);
+}
+
+.gallery-img-3 {
+	background-image: url(../../../assets/desktop/image-fisheye.jpg);
+}
+
+.gallery-img-4 {
+	background-image: url(../../../assets/desktop/image-from-above.jpg);
+}
+
+.gallery-img-5 {
+	background-image: url(../../../assets/desktop/image-grid.jpg);
+}
+
+.gallery-img-6 {
+	background-image: url(../../../assets/desktop/image-pocket-borealis.jpg);
+}
+
+.gallery-img-7 {
+	background-image: url(../../../assets/desktop/image-soccer-team.jpg);
+}
+
+.gallery-img-black-overlay,
+.gallery-img-white-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 70vh;
+	width: 100%;
+}
+
+.gallery-img-white-overlay {
+	background-color: rgb(194, 167, 167);
+	opacity: 0.5;
+	display: none;
+}
+
+.gallery-img-black-overlay {
+	background-color: black;
+	opacity: 0.3;
+	display: block;
+}
+
+.creations-container {
+	position: relative;
+}
+
+.gallery-img-text {
+	z-index: 9999;
+	position: absolute;
+	bottom: 0;
+	color: white;
+	font-size: 2rem;
+	padding: 0 5rem 2rem 2rem;
+}
+
+.creations-container:hover .gallery-img-white-overlay {
+	display: flex;
+}
+
+.creations-container:hover .gallery-img-white-text {
+	color: black;
+}
+
+@media only screen and (max-width: 930px) {
+	.gallery-img-0,
+	.gallery-img-1,
+	.gallery-img-2,
+	.gallery-img-3,
+	.gallery-img-4,
+	.gallery-img-5,
+	.gallery-img-6,
+	.gallery-img-7,
+	.gallery-img-black-overlay,
+	.gallery-img-white-overlay {
+		height: 20vh;
+		margin-bottom: 1rem;
+	}
+
+	.gallery-img-0 {
+		background-image: url(../../../assets/mobile/image-night-arcade.jpg);
+	}
+
+	.gallery-img-1 {
+		background-image: url(../../../assets/mobile/image-curiosity.jpg);
+	}
+
+	.gallery-img-2 {
+		background-image: url(../../../assets/mobile/image-deep-earth.jpg);
+	}
+
+	.gallery-img-3 {
+		background-image: url(../../../assets/mobile/image-fisheye.jpg);
+	}
+
+	.gallery-img-4 {
+		background-image: url(../../../assets/mobile/image-from-above.jpg);
+	}
+
+	.gallery-img-5 {
+		background-image: url(../../../assets/mobile/image-grid.jpg);
+	}
+
+	.gallery-img-6 {
+		background-image: url(../../../assets/mobile/image-pocket-borealis.jpg);
+	}
+
+	.gallery-img-7 {
+		background-image: url(../../../assets/mobile/image-soccer-team.jpg);
+	}
+}

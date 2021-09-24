@@ -1,0 +1,63 @@
+.creations {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.creations-btn {
+	width: 50%;
+	text-align: right;
+}
+
+.creations-btn button {
+	cursor: pointer;
+	background: black;
+	color: white;
+	border: 1px solid black;
+	padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+}
+
+.creations-btn button:hover {
+	background: white;
+	color: black;
+}
+
+.creations-title {
+	width: 50%;
+}
+
+.creations-title h2 {
+	font-size: 3rem;
+}
+
+.creations {
+	padding: 0 10% 0 10%;
+}
+
+.creations-gallery {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 24%);
+	justify-content: space-between;
+	margin-top: 4rem;
+}
+
+@media only screen and (max-width: 930px) {
+	.creations-title,
+	.creations-btn {
+		width: 100%;
+		text-align: center;
+	}
+	.creations-title {
+		order: 1;
+	}
+
+	.creations-btn {
+		order: 3;
+	}
+
+	.creations-gallery {
+		order: 2;
+		grid-template-columns: repeat(1, 100%);
+	}
+}
